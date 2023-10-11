@@ -6,7 +6,7 @@ Rocco Matarazzo
 
 Hello! This vignette is aimed at interacting with an API. Here we will
 interact with an MLB API. We will delve into multiple endpoints as well
-as some Exploratory Data Analysis (EDA).
+as some Exploratory Data Analysis (EDA). 
 
 # Required Packages
 
@@ -896,3 +896,4 @@ reflection on this project.
 #                 output_file = "Matarazzo_Output"
 #               )
 ```
+Adding a test sentence in hopes of deploying to GitHubPages.
