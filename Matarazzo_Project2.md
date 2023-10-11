@@ -22,8 +22,9 @@ Below are several different functions that pull from the MLB Data API.
 They work to acquire team and player information as well as player
 statistics.
 
-**All Teams** This first interaction is rather simple, but useful! This
-will return all the teams for a given season.
+`All Teams`  
+This first interaction is rather simple, but useful! This will return
+all the teams for a given season.
 
 ``` r
 AllTeams <- function(year){
@@ -55,8 +56,7 @@ return(Teams)
 }
 ```
 
-**40-Man Roster for the 2023 Season**
-
+`40-Man Roster for the 2023 Season`  
 This second interaction will return a Major League Baseball’s team’s
 40-man roster for the 2023 season. The team object should be entered in
 full format i.e. “Philadelphia Phillies” rather than “Phillies” or
@@ -106,11 +106,12 @@ as_tibble(FortyManFull %>% select(Team = team_name,
 }
 ```
 
-**All Players In a Season** This function will return every player who
-was on a MLB roster for a given season. I originally had this function
-wrapped within the Player Statistics’ functions below. However, I
-figured it was a good idea to make it separate, and just use that within
-the Player Statistics’ functions.
+`All Players In a Season`  
+This function will return every player who was on a MLB roster for a
+given season. I originally had this function wrapped within the Player
+Statistics’ functions below. However, I figured it was a good idea to
+make it separate, and just use that within the Player Statistics’
+functions.
 
 ``` r
 LeagueRosters <- function(year){
@@ -187,9 +188,9 @@ return(FinalPlayers)
 }
 ```
 
-**Player Batting Statistics** This function will take a player and
-return their batting statistics for a given season. The playerName
-should be given in Last, First format.
+`Player Batting Statistics`  
+This function will take a player and return their batting statistics for
+a given season. The playerName should be given in Last, First format.
 
 ``` r
 playerBattingStatistics <- function(playerName, year){
@@ -258,9 +259,10 @@ return(StatsTibble)
 }
 ```
 
-**Player Pitching Statistics** This function will take a player and
-return their pitching statistics for a given season. The playerName
-should be given in Last, First format.
+`Player Pitching Statistics`  
+This function will take a player and return their pitching statistics
+for a given season. The playerName should be given in Last, First
+format.
 
 ``` r
 playerPitchingStatistics <- function(playerName, year){
@@ -332,9 +334,9 @@ return(StatsTibble)
 }
 ```
 
-**All Player Stats** Here we’re going to combine some of the functions
-above into one and retrieve player statistics for each player on a team
-in a given season.
+`All Player Stats`  
+Here we’re going to combine some of the functions above into one and
+retrieve player statistics for each player on a team in a given season.
 
 I realized that it’s rare to search for just one player. Getting
 statistics for all players will lead to a better analysis with more
